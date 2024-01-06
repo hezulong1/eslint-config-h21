@@ -1,0 +1,69 @@
+{
+  "name": "eslint-config-h21",
+  "version": "1.0.0",
+  "description": "eslint config",
+  "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./config": "./config.js",
+    "./es": "./es.js",
+    "./es-vue2": "./es-vue2.js",
+    "./ts": "./ts.js",
+    "./ts-vue2": "./ts-vue2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hezulong1/eslint-config-h21.git"
+  },
+  "author": "hezulong1",
+  "keywords": [
+    "eslint"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "print-config": "eslint --print-config _.js"
+  },
+  "files": [
+    "rules",
+    "es-vue2.js",
+    "es.js",
+    "index.js",
+    "index.mjs",
+    "ts-vue2.js",
+    "ts.js"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.2.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": ">=8.40.0 && <8.53.0",
+    "eslint-define-config": "^2.1.0",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "1.5.3",
+    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/parser": "6.17.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unicorn": "49.0.0",
+    "eslint-plugin-vue": "^9.19.2"
+  }
+}

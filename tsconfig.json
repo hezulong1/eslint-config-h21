@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+
+    "declaration": false,
+    "sourceMap": false,
+    "removeComments": false,
+
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+
+    "baseUrl": "."
+  },
+  "include": [
+    "fixtures"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.md"
+  ]
+}
