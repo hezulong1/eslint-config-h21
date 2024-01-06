@@ -1,14 +1,13 @@
 <h1 align="center">eslint-config-h21</h1>
 <p align="center"><a href="README.md">English</a> | 中文</p>
-<p align="center">
-  <a href="https://www.npmjs.com/package/eslint-config-h21" target="_blank">
-    <img src="https://img.shields.io/badge/version-1.0.0-257855?style=for-the-badge">
-  </a>
-</p>
 
-一份支持度还比较好的 Eslint 规则配置，要求 `node>=16`，`eslint>=8.40.0`
+![npm](https://img.shields.io/npm/v/eslint-config-h21?color=%23257855)
 
 <br>
+
+一份支持度还比较好的 Eslint 规则配置，要求 `node>=16`，`eslint>=8.40.0`。
+
+## 特性
 
 * 使用分号(`;`)
 * 使用单引号(`'`)

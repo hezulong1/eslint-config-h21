@@ -1,9 +1,10 @@
 <h1 align="center">eslint-config-h21</h1>
 <p align="center">English | <a href="README.zh-CN.md">中文</a></p>
-<p align="center">
-  <a href="https://www.npmjs.com/package/eslint-config-h21" target="_blank">
-    <img src="https://img.shields.io/badge/version-1.0.0-257855?style=for-the-badge">
-  </a>
-</p>
+
+![npm](https://img.shields.io/npm/v/eslint-config-h21?color=%23257855)
+
+<br>
+
+An Eslint rule configuration with relatively good support requires `node>=16` and `eslint>=8.40.0`.
 
 ## TODO

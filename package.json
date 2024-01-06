@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-h21",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "eslint config",
   "main": "index.js",
   "module": "index.mjs",
@@ -30,7 +30,8 @@
   },
   "scripts": {
     "build": "node ./scripts/build.js",
-    "print-config": "eslint --print-config _.js"
+    "print-config": "eslint --print-config _.js",
+    "release": "npm publish --no-git-checks"
   },
   "files": [
     "rules",
