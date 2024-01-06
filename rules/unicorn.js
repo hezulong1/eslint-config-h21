@@ -1,5 +1,5 @@
 /**
- * @version 49.0.0
+ * @version 48.0.1
  * @see https://github.com/sindresorhus/eslint-plugin-unicorn#rules
  */
 module.exports = {
