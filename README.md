@@ -5,6 +5,6 @@
 
 <br>
 
-An Eslint rule configuration with relatively good support requires `node>=16` and `eslint>=8.40.0`.
+An `Eslint rule` configuration with relatively good support.
 
 ## TODO
