@@ -201,5 +201,5 @@ module.exports = {
     .replaceAll('<%= vueTsParser %>', tpl_vueTsParser)
     .replaceAll('<%= tsOverrides %>', tpl_tsOverrides);
 
-  await fs.writeFile(path, tpl, 'utf-8');
+  await fs.writeFile(path, tpl, 'utf8');
 }
