@@ -179,7 +179,7 @@ module.exports = {
     {
       files: ['scripts/**/*.*'],
       rules: {
-        'no-console': 'off',
+        'no-console': 0,
       },
     },
   ],
