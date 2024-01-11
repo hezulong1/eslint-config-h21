@@ -6,7 +6,7 @@ module.exports = {
   'unicorn/better-regex': 2,
   'unicorn/escape-case': 2,
   'unicorn/explicit-length-check': 2,
-  // 'unicorn/new-for-builtins': 2, // no-new-native-nonconstructor + no-new-wrappers + no-new-symbol
+  // 'unicorn/new-for-builtins': 2, // `no-new-native-nonconstructor` + `no-new-wrappers` + `no-new-symbol`
   'unicorn/no-array-method-this-argument': 2,
   'unicorn/no-array-push-push': 2,
   'unicorn/no-await-expression-member': 2,

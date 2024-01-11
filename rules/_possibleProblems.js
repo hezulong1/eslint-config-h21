@@ -22,7 +22,7 @@ module.exports = {
   'no-dupe-else-if': 2,
   'no-dupe-keys': 2, // ts(1117)
   'no-duplicate-case': 2,
-  'no-duplicate-imports': 1,
+  'no-duplicate-imports': 0, // use `import/no-duplicates` instead
   'no-empty-character-class': 2,
   'no-ex-assign': 2,
   'no-fallthrough': 2,
@@ -34,7 +34,7 @@ module.exports = {
   'no-loss-of-precision': 2,
   'no-misleading-character-class': 2,
   'no-new-native-nonconstructor': 2,
-  'no-new-symbol': 0, // no-new-wrappers ts(7009)
+  'no-new-symbol': 0, // ts(7009) use `no-new-wrappers` instead
   'no-obj-calls': 2, // ts(2349)
   'no-promise-executor-return': 1,
   'no-prototype-builtins': 2,
