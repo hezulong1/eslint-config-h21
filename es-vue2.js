@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-01-06 21:32:47
+// 2024-01-12 16:44:19
 
 const rules = {
   ...require('./rules/_possibleProblems'),
@@ -91,7 +91,7 @@ module.exports = {
     {
       files: ['scripts/**/*.*'],
       rules: {
-        'no-console': 'off',
+        'no-console': 0,
       },
     },
   ],
