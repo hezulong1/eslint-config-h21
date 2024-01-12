@@ -126,12 +126,12 @@ module.exports = {
   '@stylistic/spaced-comment': [2, 'always', { // DIFF
     block: {
       balanced: true,
-      exceptions: ['*'],
-      markers: ['!', ',', ':', '::'],
+      exceptions: ['#__PURE__', '@__PURE__'],
+      markers: ['!'],
     },
     line: {
-      exceptions: ['/', '#'],
-      markers: ['/', '+', '=', '-'],
+      exceptions: ['/', '-'],
+      markers: ['/', '#region', '#endregion'],
     },
   }],
   '@stylistic/switch-colon-spacing': [2, { 'after': true, 'before': false }], // DIFF
