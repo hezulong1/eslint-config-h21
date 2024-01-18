@@ -21,6 +21,8 @@ module.exports = {
   '@typescript-eslint/no-namespace': 0,
   '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
   '@typescript-eslint/no-require-imports': 2,
+  'no-shadow': 0,
+  '@typescript-eslint/no-shadow': suggestions['no-shadow'],
   '@typescript-eslint/no-this-alias': 0,
   '@typescript-eslint/no-unnecessary-type-constraint': 2,
   '@typescript-eslint/no-unsafe-declaration-merging': 2,
