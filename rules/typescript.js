@@ -2,14 +2,14 @@ const possibleProblems = require('./_possibleProblems');
 const suggestions = require('./_suggestions');
 
 /**
- * @version 6.17.0
+ * @version 6.21.0
  * @see https://typescript-eslint.io/rules/?=recommended
  */
 module.exports = {
   '@typescript-eslint/ban-ts-comment': 2,
   '@typescript-eslint/ban-types': 2,
-  '@typescript-eslint/consistent-type-imports': [2, { prefer: 'type-imports', disallowTypeAnnotations: false }],
   '@typescript-eslint/consistent-type-definitions': [2, 'interface'],
+  '@typescript-eslint/consistent-type-imports': [2, { prefer: 'type-imports', disallowTypeAnnotations: false }],
   'no-array-constructor': 0,
   '@typescript-eslint/no-array-constructor': suggestions['no-array-constructor'],
   '@typescript-eslint/no-duplicate-enum-values': 2,

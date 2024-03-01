@@ -1,7 +1,7 @@
 const config = require('../config');
 
 /**
- * @version 1.5.3
+ * @version 1.6.3
  * @see https://eslint.style/packages/default#rules
  */
 module.exports = {
@@ -64,7 +64,7 @@ module.exports = {
     SwitchCase: 1,
     VariableDeclarator: 1,
   }],
-  '@stylistic/indent-binary-ops': [2, config.indent],
+  '@stylistic/indent-binary-ops': 0, // [2, config.indent]
   '@stylistic/key-spacing': [2, { afterColon: true, beforeColon: false }],
   '@stylistic/keyword-spacing': [2, { after: true, before: true }],
   '@stylistic/linebreak-style': 0, // DIFF
@@ -109,7 +109,7 @@ module.exports = {
   '@stylistic/object-curly-spacing': [2, 'always'],
   '@stylistic/object-property-newline': [2, { allowMultiplePropertiesPerLine: true }], // DIFF
   '@stylistic/one-var-declaration-per-line': 0,
-  '@stylistic/operator-linebreak': [2, 'after', { overrides: { '?': 'before', ':': 'before', '|>': 'before' } }], // DIFF
+  '@stylistic/operator-linebreak': [2, 'after', { overrides: { '?': 'before', ':': 'before', '&&': 'ignore', '||': 'ignore' } }], // DIFF
   '@stylistic/padded-blocks': [2, { blocks: 'never', classes: 'never', switches: 'never' }],
   '@stylistic/padding-line-between-statements': 0, // DIFF
   '@stylistic/quote-props': 0, // DIFF
@@ -141,8 +141,10 @@ module.exports = {
   '@stylistic/type-generic-spacing': 2,
   '@stylistic/type-named-tuple-spacing': 2,
   '@stylistic/wrap-iife': [2, 'any', { functionPrototypeMethods: true }],
+  '@stylistic/wrap-regex': 0,
   '@stylistic/yield-star-spacing': [2, 'after'], // DIFF
 
+  // '@stylistic/jsx-child-element-spacing': 0,
   '@stylistic/jsx-closing-bracket-location': 2,
   '@stylistic/jsx-closing-tag-location': 2,
   '@stylistic/jsx-curly-brace-presence': [2, { propElementValues: 'always' }],
@@ -153,8 +155,13 @@ module.exports = {
   '@stylistic/jsx-indent': [2, config.indent, { checkAttributes: true, indentLogicalExpressions: true }],
   '@stylistic/jsx-indent-props': [2, config.indent],
   '@stylistic/jsx-max-props-per-line': [2, { maximum: 1, when: 'multiline' }],
+  // '@stylistic/jsx-newline': 0,
   '@stylistic/jsx-one-expression-per-line': [2, { allow: 'single-child' }],
+  '@stylistic/jsx-pascal-case': [2, { allowNamespace: true }],
+  '@stylistic/jsx-props-no-multi-spaces': 2,
   '@stylistic/jsx-quotes': 2,
+  // '@stylistic/jsx-self-closing-comp': 0,
+  // '@stylistic/jsx-sort-props': 0,
   '@stylistic/jsx-tag-spacing': [
     2,
     {

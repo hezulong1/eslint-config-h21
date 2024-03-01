@@ -32,7 +32,7 @@ module.exports = {
   'unicorn/prefer-default-parameters': 2,
   'unicorn/prefer-dom-node-dataset': 2,
   'unicorn/prefer-dom-node-text-content': 2,
-  'unicorn/prefer-math-trunc': 2,
+  // 'unicorn/prefer-math-trunc': 2,
   'unicorn/prefer-negative-index': 2,
   'unicorn/prefer-number-properties': 2,
   // 'unicorn/prefer-optional-catch-binding': 2,
