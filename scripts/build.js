@@ -177,7 +177,7 @@ module.exports = {
       rules: vueRules,
     },<%= tsOverrides %>
     {
-      files: ['scripts/**/*.*'],
+      files: ['scripts/**/*'],
       rules: {
         'no-console': 0,
       },

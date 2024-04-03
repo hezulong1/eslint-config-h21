@@ -7,15 +7,15 @@ const config = require('../config');
 module.exports = {
   'no-undef': 0,
 
-  'vue/multi-word-component-names': 0,
+  // 'vue/multi-word-component-names': 0,
 
   // Suggestions
-  'vue/attribute-hyphenation': [2, 'always'],
-  'vue/component-definition-name-casing': [2, 'PascalCase'], // replace vue/name-property-casing
-  'vue/max-attributes-per-line': [2, { singleline: 6, multiline: 1 }],
-  'vue/no-template-shadow': 2,
-  'vue/require-default-prop': 0,
-  'vue/singleline-html-element-content-newline': 0,
+  // 'vue/attribute-hyphenation': [2, 'always'],
+  // 'vue/component-definition-name-casing': [2, 'PascalCase'], // replace vue/name-property-casing
+  // 'vue/max-attributes-per-line': [2, { singleline: 6, multiline: 1 }],
+  // 'vue/no-template-shadow': 2,
+  // 'vue/require-default-prop': 0,
+  // 'vue/singleline-html-element-content-newline': 0,
   'vue/no-v-html': 0,
   'vue/this-in-template': [2, 'never'],
 

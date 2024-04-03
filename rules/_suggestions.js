@@ -139,6 +139,6 @@ module.exports = {
   'sort-vars': 0,
   'strict': [2, 'global'],
   'symbol-description': 2,
-  'vars-on-top': 2,
+  'vars-on-top': 0,
   'yoda': 0,
 };
