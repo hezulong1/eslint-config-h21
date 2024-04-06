@@ -1,6 +1,9 @@
 // AUTO GENERATED, DON'T EDIT!!!
 // 2024-01-12 16:44:19
 
+const vueOverrideRules = require('./rules/vueOverride');
+const tsOverrideRules = require('./rules/typescriptOverride');
+
 const rules = {
   ...require('./rules/_possibleProblems'),
   ...require('./rules/_suggestions'),
@@ -11,9 +14,8 @@ const rules = {
   ...require('./rules/unicorn'),
   ...require('./rules/import'),
   ...require('./rules/typescript'),
+  ...require('./rules/vue3').vue3,
 };
-const vueRules = require('./rules/vue');
-const tsOverrideRules = require('./rules/typescriptOverride');
 
 module.exports = {
   env: {
@@ -62,6 +64,7 @@ module.exports = {
     '@stylistic',
     '@typescript-eslint',
     'unicorn',
+    'vue',
   ],
 
   extends: [
@@ -76,14 +79,13 @@ module.exports = {
   overrides: [
     {
       files: ['*.vue'],
-      extends: 'plugin:vue/vue3-recommended',
       parser: 'vue-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.vue'],
         ecmaVersion: 2022,
       },
-      rules: vueRules,
+      rules: vueOverrideRules,
     },
     {
       files: ['*.ts', '*.cts', '*.mts', '*.tsx'],

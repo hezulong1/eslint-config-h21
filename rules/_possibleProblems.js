@@ -24,6 +24,7 @@ module.exports = {
   'no-duplicate-case': 2,
   'no-duplicate-imports': 0, // use `import/no-duplicates` instead
   'no-empty-character-class': 2,
+  'no-empty-pattern': 2,
   'no-ex-assign': 2,
   'no-fallthrough': 2,
   'no-func-assign': 2, // ts(2630)

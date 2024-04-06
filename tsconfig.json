@@ -20,13 +20,10 @@
     "noImplicitOverride": true,
     "noUnusedLocals": true,
 
+    "allowJs": true,
+
     "skipLibCheck": true,
   },
-  "include": [
-    "fixtures",
-    "local.jsx",
-    "local.vue"
-  ],
   "exclude": [
     "dist",
     "node_modules",
