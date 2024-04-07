@@ -15,7 +15,7 @@ module.exports = {
   'default-case': 0,
   'default-case-last': 2,
   'default-param-last': 0,
-  'dot-notation': [2, { allowKeywords: false }],
+  'dot-notation': 0, // [2, { allowKeywords: false }],
   'eqeqeq': [2, 'always', { null: 'ignore' }],
   'func-name-matching': 0,
   'func-names': 0,

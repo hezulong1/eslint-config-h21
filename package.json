@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-h21",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "eslint config",
   "main": "index.js",
   "module": "index.mjs",
@@ -9,7 +9,6 @@
       "import": "./index.mjs",
       "require": "./index.js"
     },
-    "./config": "./config.js",
     "./es": "./es.js",
     "./es-vue2": "./es-vue2.js",
     "./ts": "./ts.js",
@@ -29,15 +28,11 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "t": "tsup ts.js --format cjs",
-    "w": "rollup -i ts.esm.js -o ts.out.js -f cjs --intro \"/*\n *IMPORT: don't change!\n */\"",
     "build": "node ./scripts/build.js",
     "print-config": "eslint --print-config _.js",
     "release": "npm publish --no-git-checks"
   },
   "files": [
-    "rules",
-    "config.js",
     "es-vue2.js",
     "es.js",
     "index.js",
@@ -61,6 +56,7 @@
     "eslint": "^8.44.0",
     "eslint-define-config": "^2.1.0",
     "fs-extra": "^11.2.0",
+    "prettier": "^3.2.5",
     "typescript": "^5.3.3",
     "vue": "^3.4.21"
   },

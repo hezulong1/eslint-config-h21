@@ -1,7 +1,8 @@
 exports.$ = n => ' '.repeat(n);
 exports.green = msg => `\u001B[32m${msg}\u001B[39m`;
 exports.uniq = a => Array.from(new Set(a));
-exports.join = a => a.filter(Boolean).join('\n');
+exports.array = a => a.filter(Boolean);
+exports.join = a => exports.array(a).join('\n');
 exports.lines = s => s.split(/\r\n|\r|\n/);
 
 const digit = (number, length = 2) => (String(number)).padStart(length, '0');
