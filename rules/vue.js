@@ -1,7 +1,7 @@
 const config = require('../config');
 
 /**
- * https://eslint.vuejs.org/rules/#base-rules-enabling-correct-eslint-parsing
+ * @see https://eslint.vuejs.org/rules/#base-rules-enabling-correct-eslint-parsing
  */
 const base = {
   'vue/comment-directive': 2,
@@ -9,9 +9,9 @@ const base = {
 };
 
 /**
- * https://eslint.vuejs.org/rules/#uncategorized
+ * @see https://eslint.vuejs.org/rules/#uncategorized
  */
-const uncategorized = (version, isTs) => {
+const uncategorized = (version, useTs) => {
   const isVue3 = version === 3;
   return {
     'vue/block-lang': 0,
@@ -41,7 +41,7 @@ const uncategorized = (version, isTs) => {
     'vue/no-multiple-objects-in-class': 0,
     'vue/no-potential-component-option-typo': 0,
     'vue/no-ref-object-reactivity-loss': 0,
-    'vue/no-required-prop-with-default': isTs ? 1 : 0, // TS
+    'vue/no-required-prop-with-default': useTs ? 1 : 0, // TS
     'vue/no-restricted-block': 0, // REDEFINE
     'vue/no-restricted-call-after-await': 0, // REDEFINE
     'vue/no-restricted-class': 0, // REDEFINE
@@ -82,7 +82,7 @@ const uncategorized = (version, isTs) => {
     'vue/require-macro-variable-name': 1,
     'vue/require-name-property': 0,
     'vue/require-prop-comment': 0,
-    'vue/require-typed-object-prop': isTs ? 1 : 0, // TS
+    'vue/require-typed-object-prop': useTs ? 1 : 0, // TS
     'vue/require-typed-ref': 0, // TS
     'vue/script-indent': 0,
     'vue/sort-keys': 0,
@@ -95,7 +95,7 @@ const uncategorized = (version, isTs) => {
 };
 
 /**
- * https://eslint.vuejs.org/rules/#deprecated
+ * @see https://eslint.vuejs.org/rules/#deprecated
  */
 const deprecated = {
   'vue/component-tags-order': 0, // replaced by vue/block-order
@@ -107,7 +107,7 @@ const deprecated = {
 };
 
 /**
- * https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention
+ * @see https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention
  */
 const global_essential = {
   'vue/multi-word-component-names': 0,
@@ -282,7 +282,7 @@ const vue2_essential = {
 };
 
 /**
- * https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability
+ * @see https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability
  */
 const vue2_strongly_recommended = {
   'vue/attribute-hyphenation': [2, 'always'],
@@ -319,7 +319,7 @@ const vue3_strongly_recommended = {
 };
 
 /**
- * https://eslint.vuejs.org/rules/#priority-c-recommended-potentially-dangerous-patterns
+ * @see https://eslint.vuejs.org/rules/#priority-c-recommended-potentially-dangerous-patterns
  */
 const recommended = {
   'vue/attributes-order': 1,
@@ -335,12 +335,12 @@ const recommended = {
  * @version 9.24.0
  * @see https://eslint.vuejs.org/rules/
  */
-exports.vue2 = isTs => ({
+exports.vue2 = useTs => ({
   ...base,
   ...vue2_essential,
   ...vue2_strongly_recommended,
   ...recommended,
-  ...uncategorized(2, isTs),
+  ...uncategorized(2, useTs),
   ...deprecated,
 });
 
@@ -348,11 +348,11 @@ exports.vue2 = isTs => ({
  * @version 9.24.0
  * @see https://eslint.vuejs.org/rules/
  */
-exports.vue3 = isTs => ({
+exports.vue3 = useTs => ({
   ...base,
   ...vue3_essential,
   ...vue3_strongly_recommended,
   ...recommended,
-  ...uncategorized(3, isTs),
+  ...uncategorized(3, useTs),
   ...deprecated,
 });

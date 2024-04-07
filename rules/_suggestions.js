@@ -1,6 +1,3 @@
-/**
- * @type { import('eslint-define-config').Rules }
- */
 module.exports = {
   'accessor-pairs': [2, { setWithoutGet: true, enforceForClassMembers: true }],
   'arrow-body-style': [2, 'as-needed'],

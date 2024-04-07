@@ -3,7 +3,7 @@ const suggestions = require('./_suggestions');
 
 /**
  * @version 9.24.0
- * https://eslint.vuejs.org/rules/#extension-rules
+ * @see https://eslint.vuejs.org/rules/#extension-rules
  */
 module.exports = {
   'vue/array-bracket-newline': 0,

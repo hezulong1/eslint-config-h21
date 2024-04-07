@@ -1,6 +1,3 @@
-/**
- * @type { import('eslint-define-config').Rules }
- */
 module.exports = {
   'array-callback-return': [2, { allowImplicit: false, checkForEach: false }],
   'constructor-super': 2, // ts(2335) & ts(2377)

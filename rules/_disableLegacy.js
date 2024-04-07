@@ -1,7 +1,6 @@
 /**
  * take from plugin:@stylistic/disable-legacy
  * @version 1.5.3
- * @type { import('eslint-define-config').Rules }
  */
 module.exports = {
   'array-bracket-newline': 0,
