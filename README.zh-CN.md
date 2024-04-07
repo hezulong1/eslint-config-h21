@@ -41,7 +41,7 @@ module.exports = {
 
 ## 待优化
 
-+ 等 Eslint 到版本 9，届时适配 eslint.config.js，顺便兼容 Prettier
++ 等 Eslint 到版本 9，届时适配 eslint.config.js
 
 
 <details><summary>低版本 Node<=14 检测 JS + Vue2</summary>
