@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-h21",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "eslint config",
   "main": "index.js",
   "module": "index.mjs",
@@ -30,7 +30,8 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "print-config": "eslint --print-config _.js",
-    "release": "npm publish --no-git-checks"
+    "release": "npm publish --no-git-checks",
+    "unrelease": "npm unpublish eslint-config-h21@0.8.0"
   },
   "files": [
     "es-vue2.js",
