@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-07 15:17:04
+// 2024-04-08 17:10:15
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -564,7 +564,6 @@ module.exports = {
     'vue/html-comment-content-spacing': [2, 'always'],
     'vue/html-comment-indent': [2, 2],
     'vue/no-required-prop-with-default': 1,
-    'vue/no-setup-props-reactivity-loss': 2,
     'vue/no-this-in-before-route-enter': 1,
     'vue/no-unused-refs': 2,
     'vue/no-use-v-else-with-v-for': 2,
@@ -602,7 +601,6 @@ module.exports = {
   overrides: [
     {
       files: ['*.vue'],
-      extends: 'plugin:vue/recommended',
       parser: 'vue-eslint-parser',
       parserOptions: { extraFileExtensions: ['.vue'], ecmaVersion: 2022, parser: '@typescript-eslint/parser' },
       rules: {

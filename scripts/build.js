@@ -132,7 +132,6 @@ function build(targetType, vueVersion) {
 
   const overrideVue = {
     files: ['*.vue'],
-    extends: `plugin:vue/${useVue2 ? '' : 'vue3-'}recommended`,
     parser: 'vue-eslint-parser',
     parserOptions: {
       extraFileExtensions: ['.vue'],

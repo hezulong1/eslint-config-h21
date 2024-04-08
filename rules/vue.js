@@ -54,7 +54,7 @@ const uncategorized = (version, useTs) => {
     'vue/no-restricted-v-bind': 0, // REDEFINE
     'vue/no-restricted-v-on': 0, // REDEFINE
     'vue/no-root-v-if': 0,
-    'vue/no-setup-props-reactivity-loss': 2, // jsx
+    'vue/no-setup-props-reactivity-loss': 0, // jsx
     'vue/no-static-inline-styles': 0,
     'vue/no-template-target-blank': 0,
     'vue/no-this-in-before-route-enter': 1, // jsx
