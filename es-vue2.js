@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-08 17:10:15
+// 2024-04-11 08:54:36
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -37,7 +37,6 @@ module.exports = {
     'for-direction': 2,
     'getter-return': 2,
     'no-async-promise-executor': 2,
-    'no-await-in-loop': 2,
     'no-class-assign': 2,
     'no-compare-neg-zero': 2,
     'no-cond-assign': 2,
@@ -86,12 +85,11 @@ module.exports = {
     'require-atomic-updates': [1, { allowProperties: true }],
     'use-isnan': 2,
     'valid-typeof': [2, { requireStringLiterals: true }],
-    'accessor-pairs': [2, { setWithoutGet: true, enforceForClassMembers: true }],
     'arrow-body-style': [2, 'as-needed'],
     'block-scoped-var': 2,
     'default-case-last': 2,
     eqeqeq: [2, 'always', { null: 'ignore' }],
-    'grouped-accessor-pairs': [1, 'setBeforeGet'],
+    'grouped-accessor-pairs': 1,
     'guard-for-in': 2,
     'new-cap': [2, { newIsCap: true, capIsNew: false, properties: true }],
     'no-alert': 2,
@@ -425,7 +423,6 @@ module.exports = {
     ],
     'unicorn/better-regex': 2,
     'unicorn/escape-case': 2,
-    'unicorn/explicit-length-check': 2,
     'unicorn/no-array-method-this-argument': 2,
     'unicorn/no-array-push-push': 2,
     'unicorn/no-await-expression-member': 2,
@@ -441,7 +438,6 @@ module.exports = {
     'unicorn/no-thenable': 2,
     'unicorn/no-unnecessary-await': 2,
     'unicorn/no-useless-spread': 2,
-    'unicorn/no-useless-undefined': 2,
     'unicorn/number-literal-case': 2,
     'unicorn/prefer-array-find': 2,
     'unicorn/prefer-array-flat-map': 2,
@@ -562,7 +558,6 @@ module.exports = {
     'vue/define-macros-order': [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
     'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
     'vue/html-comment-content-spacing': [2, 'always'],
-    'vue/html-comment-indent': [2, 2],
     'vue/no-this-in-before-route-enter': 1,
     'vue/no-unused-refs': 2,
     'vue/no-use-v-else-with-v-for': 2,
