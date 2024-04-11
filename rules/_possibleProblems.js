@@ -1,10 +1,13 @@
+/**
+ * @see https://eslint.org/docs/latest/rules/#possible-problems
+ */
 module.exports = {
   'array-callback-return': [2, { allowImplicit: false, checkForEach: false }],
   'constructor-super': 2, // ts(2335) & ts(2377)
   'for-direction': 2,
   'getter-return': 2, // ts(2378)
   'no-async-promise-executor': 2,
-  'no-await-in-loop': 2,
+  'no-await-in-loop': 0,
   'no-class-assign': 2,
   'no-compare-neg-zero': 2,
   'no-cond-assign': 2,

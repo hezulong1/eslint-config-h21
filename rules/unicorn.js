@@ -5,7 +5,7 @@
 module.exports = {
   'unicorn/better-regex': 2,
   'unicorn/escape-case': 2,
-  'unicorn/explicit-length-check': 2,
+  'unicorn/explicit-length-check': 0,
   // 'unicorn/new-for-builtins': 2, // `no-new-native-nonconstructor` + `no-new-wrappers` + `no-new-symbol`
   'unicorn/no-array-method-this-argument': 2,
   'unicorn/no-array-push-push': 2,
@@ -23,7 +23,7 @@ module.exports = {
   'unicorn/no-unnecessary-await': 2,
   // 'unicorn/no-unnecessary-polyfills': [2, { targets: [] / { node: 'current' } }],
   'unicorn/no-useless-spread': 2,
-  'unicorn/no-useless-undefined': 2,
+  'unicorn/no-useless-undefined': 0,
   'unicorn/number-literal-case': 2,
   'unicorn/prefer-array-find': 2,
   'unicorn/prefer-array-flat-map': 2,

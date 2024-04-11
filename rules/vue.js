@@ -27,7 +27,7 @@ const uncategorized = (version, useTs) => {
     'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
     'vue/html-comment-content-newline': 0,
     'vue/html-comment-content-spacing': [2, 'always'],
-    'vue/html-comment-indent': [2, config.indent],
+    'vue/html-comment-indent': 0, // [2, config.indent],
     'vue/match-component-file-name': 0,
     'vue/match-component-import-name': 0,
     'vue/max-lines-per-block': 0,

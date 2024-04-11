@@ -1,5 +1,8 @@
+/**
+ * @see https://eslint.org/docs/latest/rules/#suggestions
+ */
 module.exports = {
-  'accessor-pairs': [2, { setWithoutGet: true, enforceForClassMembers: true }],
+  'accessor-pairs': 0, // [2, { setWithoutGet: true, enforceForClassMembers: true }],
   'arrow-body-style': [2, 'as-needed'],
   'block-scoped-var': 2,
   'camelcase': 0,
@@ -17,7 +20,7 @@ module.exports = {
   'func-name-matching': 0,
   'func-names': 0,
   'func-style': 0,
-  'grouped-accessor-pairs': [1, 'setBeforeGet'],
+  'grouped-accessor-pairs': 1, // [1, 'setBeforeGet'],
   'guard-for-in': 2,
   'id-denylist': 0,
   'id-length': 0,
