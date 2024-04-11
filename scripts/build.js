@@ -137,7 +137,9 @@ function build(targetType, vueVersion) {
       extraFileExtensions: ['.vue'],
       ecmaVersion: CONFIG.ecamVersion,
     },
-    rules: require('../rules/vueOverride'),
+    rules: useTs
+      ? { ...require('../rules/typescriptOverride'), ...require('../rules/vueOverride') }
+      : require('../rules/vueOverride'),
   };
   if (useTs) {
     overrideVue.parserOptions.parser = '@typescript-eslint/parser';
