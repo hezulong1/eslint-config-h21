@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-11 08:54:36
+// 2024-04-11 11:40:19
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -599,6 +599,26 @@ module.exports = {
       parser: 'vue-eslint-parser',
       parserOptions: { extraFileExtensions: ['.vue'], ecmaVersion: 2022, parser: '@typescript-eslint/parser' },
       rules: {
+        'constructor-super': 0,
+        'getter-return': 0,
+        'no-const-assign': 0,
+        'no-dupe-args': 0,
+        'no-dupe-class-members': 0,
+        'no-dupe-keys': 0,
+        'no-func-assign': 0,
+        'no-import-assign': 0,
+        'no-new-symbol': 0,
+        'no-obj-calls': 0,
+        'no-redeclare': 0,
+        'no-setter-return': 0,
+        'no-this-before-super': 0,
+        'no-undef': 0,
+        'no-unreachable': 0,
+        'no-unsafe-negation': 0,
+        'no-var': 2,
+        'prefer-const': 0,
+        'prefer-rest-params': 2,
+        'prefer-spread': 0,
         'vue/array-bracket-newline': 0,
         'vue/array-bracket-spacing': [2, 'never'],
         'vue/array-element-newline': 0,
