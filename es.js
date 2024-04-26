@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-26 08:52:25
+// 2024-04-26 09:11:14
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -30,7 +30,7 @@ module.exports = {
   ],
   plugins: ['@stylistic', 'unicorn', 'vue'],
   extends: ['plugin:import/recommended'],
-  setting: { 'import/resolver': { node: { extensions: ['.js', '.cjs', '.mjs', '.jsx'] } } },
+  settings: { 'import/resolver': { node: { extensions: ['.js', '.cjs', '.mjs', '.jsx'] } } },
   rules: {
     'array-callback-return': [2, { allowImplicit: false, checkForEach: false }],
     'constructor-super': 2,

@@ -106,7 +106,7 @@ function build(targetType, vueVersion) {
   if (useTs) {
     result.parser = '@typescript-eslint/parser';
   } else {
-    result.setting = {
+    result.settings = {
       'import/resolver': {
         node: { extensions: ['.js', '.cjs', '.mjs', '.jsx'] },
       },
