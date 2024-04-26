@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-11 11:40:19
+// 2024-04-26 08:52:25
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -112,9 +112,7 @@ module.exports = {
     'no-label-var': 2,
     'no-labels': 2,
     'no-lone-blocks': 2,
-    'no-lonely-if': 1,
     'no-loop-func': 2,
-    'no-multi-assign': 2,
     'no-multi-str': 2,
     'no-new': 2,
     'no-new-func': 2,
@@ -555,12 +553,10 @@ module.exports = {
     'vue/component-name-in-template-casing': [2, 'PascalCase'],
     'vue/component-options-name-casing': [2, 'PascalCase'],
     'vue/custom-event-name-casing': [2, 'kebab-case'],
-    'vue/define-macros-order': [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
     'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
     'vue/html-comment-content-spacing': [2, 'always'],
     'vue/no-required-prop-with-default': 1,
     'vue/no-this-in-before-route-enter': 1,
-    'vue/no-unused-refs': 2,
     'vue/no-use-v-else-with-v-for': 2,
     'vue/no-useless-mustaches': [2, { ignoreIncludesComment: true, ignoreStringEscape: true }],
     'vue/no-useless-v-bind': [2, { ignoreIncludesComment: true, ignoreStringEscape: true }],

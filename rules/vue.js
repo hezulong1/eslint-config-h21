@@ -21,7 +21,7 @@ const uncategorized = (version, useTs) => {
     'vue/component-name-in-template-casing': [2, 'PascalCase'], // REDEFINE
     'vue/component-options-name-casing': [2, 'PascalCase'],
     'vue/custom-event-name-casing': [2, isVue3 ? 'camelCase' : 'kebab-case'], // diff-with-2
-    'vue/define-macros-order': [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
+    'vue/define-macros-order': 0, // [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
     'vue/define-props-declaration': 0, // TS
     'vue/enforce-style-attribute': 0,
     'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
@@ -63,7 +63,7 @@ const uncategorized = (version, useTs) => {
     'vue/no-unsupported-features': 0,
     'vue/no-unused-emit-declarations': 0,
     'vue/no-unused-properties': 0,
-    'vue/no-unused-refs': 2,
+    'vue/no-unused-refs': 0,
     'vue/no-use-v-else-with-v-for': 2,
     'vue/no-useless-mustaches': [2, { ignoreIncludesComment: true, ignoreStringEscape: true }],
     'vue/no-useless-v-bind': [2, { ignoreIncludesComment: true, ignoreStringEscape: true }],
