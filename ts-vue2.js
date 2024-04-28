@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-26 09:11:14
+// 2024-04-28 09:26:03
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -80,7 +80,7 @@ module.exports = {
     'no-unsafe-negation': 2,
     'no-unsafe-optional-chaining': 2,
     'no-unused-vars': 0,
-    'no-use-before-define': [2, { functions: false, classes: true, variables: true, allowNamedExports: false }],
+    'no-use-before-define': 0,
     'no-useless-backreference': 2,
     'require-atomic-updates': [1, { allowProperties: true }],
     'use-isnan': 2,
@@ -564,10 +564,17 @@ module.exports = {
     'vue/prefer-true-attribute-shorthand': 2,
     'vue/require-macro-variable-name': 1,
     'vue/require-typed-object-prop': 1,
-    '@typescript-eslint/ban-ts-comment': 2,
+    '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/ban-types': 2,
+    '@typescript-eslint/class-literal-property-style': 0,
+    '@typescript-eslint/consistent-indexed-object-style': 0,
+    '@typescript-eslint/consistent-type-assertions': 0,
     '@typescript-eslint/consistent-type-definitions': [2, 'interface'],
     '@typescript-eslint/consistent-type-imports': [2, { prefer: 'type-imports', disallowTypeAnnotations: false }],
+    '@typescript-eslint/default-param-last': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/explicit-member-accessibility': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-array-constructor': 2,
     '@typescript-eslint/no-duplicate-enum-values': 2,
     '@typescript-eslint/no-explicit-any': 0,
@@ -585,6 +592,18 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [
       2,
       { vars: 'all', args: 'none', caughtErrors: 'none', ignoreRestSiblings: true },
+    ],
+    '@typescript-eslint/no-use-before-define': [
+      2,
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: false,
+        enums: true,
+        typedefs: false,
+        ignoreTypeReferences: false,
+      },
     ],
     '@typescript-eslint/no-var-requires': 2,
     '@typescript-eslint/prefer-as-const': 2,
