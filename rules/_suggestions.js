@@ -130,7 +130,7 @@ module.exports = {
   'prefer-rest-params': 2, // ts provides better types with rest args over arguments
   'prefer-spread': 0, // ts transpiles spread to apply, so no need for manual apply
   'prefer-template': 0,
-  'radix': [2, 'as-needed'],
+  'radix': 0, // [2, 'as-needed'],
   'require-await': 0,
   'require-unicode-regexp': 0,
   'require-yield': 0,
@@ -138,7 +138,7 @@ module.exports = {
   'sort-keys': 0,
   'sort-vars': 0,
   'strict': [2, 'global'],
-  'symbol-description': 2,
+  'symbol-description': 0,
   'vars-on-top': 0,
   'yoda': 0,
 };

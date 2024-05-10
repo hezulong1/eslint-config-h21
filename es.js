@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-04-28 09:26:03
+// 2024-05-10 09:06:41
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -144,9 +144,7 @@ module.exports = {
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'prefer-regex-literals': [2, { disallowRedundantWrapping: true }],
     'prefer-rest-params': 2,
-    radix: [2, 'as-needed'],
     strict: [2, 'global'],
-    'symbol-description': 2,
     'unicode-bom': [2, 'never'],
     'array-bracket-newline': 0,
     'array-bracket-spacing': 0,
