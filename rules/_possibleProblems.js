@@ -35,7 +35,7 @@ module.exports = {
   'no-loss-of-precision': 2,
   'no-misleading-character-class': 2,
   'no-new-native-nonconstructor': 2,
-  'no-new-symbol': 0, // ts(7009) use `no-new-wrappers` instead
+  // 'no-new-symbol': 0, // ts(7009) use `no-new-wrappers` instead
   'no-obj-calls': 2, // ts(2349)
   'no-promise-executor-return': 1,
   'no-prototype-builtins': 2,
@@ -56,6 +56,7 @@ module.exports = {
   'no-unused-private-class-members': 0,
   'no-unused-vars': [2, { vars: 'all', args: 'none', caughtErrors: 'none', ignoreRestSiblings: true }],
   'no-use-before-define': [2, { functions: false, classes: true, variables: true, allowNamedExports: false }],
+  'no-useless-assignment': 2,
   'no-useless-backreference': 2,
   'require-atomic-updates': [1, { allowProperties: true }],
   'use-isnan': 2,

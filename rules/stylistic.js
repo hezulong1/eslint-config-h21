@@ -1,7 +1,7 @@
 const config = require('../config');
 
 /**
- * @version 1.7.0
+ * @version 2.3.0
  * @see https://eslint.style/packages/default#rules
  */
 module.exports = {
@@ -67,6 +67,7 @@ module.exports = {
   '@stylistic/indent-binary-ops': 0, // [2, config.indent]
   '@stylistic/key-spacing': [2, { afterColon: true, beforeColon: false }],
   '@stylistic/keyword-spacing': [2, { after: true, before: true }],
+  '@stylistic/line-comment-position': 0,
   '@stylistic/linebreak-style': 0,
   '@stylistic/lines-around-comment': 0,
   '@stylistic/lines-between-class-members': 0,
@@ -83,6 +84,7 @@ module.exports = {
     },
     multilineDetection: 'brackets',
   }],
+  '@stylistic/multiline-comment-style': 0,
   '@stylistic/multiline-ternary': [2, 'always-multiline'],
   '@stylistic/new-parens': 2,
   '@stylistic/newline-per-chained-call': 0,

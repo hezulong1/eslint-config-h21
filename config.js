@@ -1,5 +1,5 @@
 module.exports = {
-  ecamVersion: 2022,
+  ecmaVersion: 2022,
   indent: 2,
   semi: true,
 };

@@ -42,10 +42,10 @@
     "ts.js"
   ],
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.18.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.44.0",
+    "eslint": ">=8.56.0",
     "typescript": ">=4.2.0"
   },
   "peerDependenciesMeta": {
@@ -54,18 +54,19 @@
     }
   },
   "devDependencies": {
-    "eslint": "^8.44.0",
+    "eslint": "^9.7.0",
     "fs-extra": "^11.2.0",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3",
     "vue": "^3.4.21"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "6.21.0",
-    "@typescript-eslint/parser": "6.21.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-unicorn": "48.0.1",
-    "eslint-plugin-vue": "^9.24.0"
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint-plugin-import-x": "^3.0.1",
+    "eslint-plugin-unicorn": "^54.0.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0"
   }
 }

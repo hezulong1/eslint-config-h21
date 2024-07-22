@@ -1,6 +1,6 @@
 /**
  * take from plugin:@stylistic/disable-legacy
- * @version 1.5.3
+ * @version 2.3.0
  */
 module.exports = {
   'array-bracket-newline': 0,
