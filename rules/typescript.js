@@ -2,7 +2,7 @@ const possibleProblems = require('./_possibleProblems');
 const suggestions = require('./_suggestions');
 
 /**
- * @version 6.21.0
+ * @version 7.16.0
  * @see https://typescript-eslint.io/rules/?=recommended
  */
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
   '@typescript-eslint/consistent-indexed-object-style': 0, // REDEFINE
   '@typescript-eslint/consistent-type-assertions': 0, // REDEFINE
   '@typescript-eslint/consistent-type-definitions': [2, 'interface'],
-  '@typescript-eslint/consistent-type-imports': [2, { prefer: 'type-imports', disallowTypeAnnotations: false }],
+  // '@typescript-eslint/consistent-type-imports': [2, { prefer: 'type-imports', disallowTypeAnnotations: false }],
   '@typescript-eslint/default-param-last': 0, // REDEFINE
   '@typescript-eslint/explicit-function-return-type': 0, // REDEFINE
   '@typescript-eslint/explicit-member-accessibility': 0, // REDEFINE

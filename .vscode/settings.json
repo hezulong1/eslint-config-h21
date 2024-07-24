@@ -1,4 +1,17 @@
 {
-  // "eslint.useFlatConfig": true,
-  "eslint.options": {}
+  "eslint.useFlatConfig": true,
+  "eslint.options": {},
+  "eslint.probe": [
+    "astro",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "mdx",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ]
 }
