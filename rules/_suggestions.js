@@ -56,11 +56,11 @@ module.exports = {
   'no-extra-boolean-cast': 2,
   'no-extra-label': 1,
   'no-global-assign': 2,
-  'no-implicit-coercion': 1,
+  'no-implicit-coercion': [1, { boolean: false }],
   'no-implicit-globals': 2,
   'no-implied-eval': 2,
   'no-inline-comments': 0,
-  'no-invalid-this': 2,
+  'no-invalid-this': 0,
   'no-iterator': 2,
   'no-label-var': 2,
   'no-labels': 2,
@@ -125,7 +125,7 @@ module.exports = {
   'prefer-numeric-literals': 0,
   'prefer-object-has-own': 0,
   'prefer-object-spread': 0,
-  'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
+  'prefer-promise-reject-errors': 0, // [2, { allowEmptyReject: true }],
   'prefer-regex-literals': [2, { disallowRedundantWrapping: true }],
   'prefer-rest-params': 2, // ts provides better types with rest args over arguments
   'prefer-spread': 0, // ts transpiles spread to apply, so no need for manual apply

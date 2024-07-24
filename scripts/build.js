@@ -55,7 +55,7 @@ function build(targetType, vueVersion) {
 
     parserOptions: {
       sourceType: 'module',
-      ecmaVersion: CONFIG.ecamVersion,
+      ecmaVersion: CONFIG.ecmaVersion,
       ecmaFeatures: {
         jsx: true,
       },
@@ -135,7 +135,7 @@ function build(targetType, vueVersion) {
     parser: 'vue-eslint-parser',
     parserOptions: {
       extraFileExtensions: ['.vue'],
-      ecmaVersion: CONFIG.ecamVersion,
+      ecmaVersion: CONFIG.ecmaVersion,
     },
     rules: useTs
       ? { ...require('../rules/typescriptOverride'), ...require('../rules/vueOverride') }

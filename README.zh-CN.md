@@ -39,15 +39,10 @@ module.exports = {
 * `h21/es`：采用 JS + Vue3 规则
 * `h21/es-vue2`：采用 JS + Vue2 规则
 
-## 待优化
-
-+ 等 Eslint 到版本 9，届时适配 eslint.config.js
-
-
-<details><summary>低版本 Node<=14 检测 JS + Vue2</summary>
+## Node<=14
 
 ```sh
-npm i eslint@6.8.0 babel-eslint@10.1.0 eslint-plugin-vue@6.2.2 @vividcat/eslint-config@2.1.2 -D
+npm i eslint@6.8.0 babel-eslint@10.1.0 eslint-plugin-vue@6.2.2 -D
 ```
 
 键入规则：
@@ -56,8 +51,7 @@ npm i eslint@6.8.0 babel-eslint@10.1.0 eslint-plugin-vue@6.2.2 @vividcat/eslint-
 module.exports = {
   root: true,
   globals: {
-    __DEV__: 'readonly',
-    process: 'readonly'
+    __DEV__: 'readonly'
   },
   parserOptions: {
     parser: 'babel-eslint',
@@ -68,53 +62,11 @@ module.exports = {
       legacyDecorators: true
     }
   },
-  extends: ['plugin:vue/recommended', '@vividcat'],
-  plugins: [ 'vue' ],
+  extends: ['plugin:vue/recommended', 'eslint:recommended'],
+  plugins: ['vue'],
   rules: {
-    'array-bracket-spacing': ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
-    'arrow-body-style': ['error', 'as-needed'],
-    'object-curly-spacing': ['error', 'always', { objectsInObjects: false }],
-    'no-unused-vars': ['error', {
-      args: 'after-used',
-      argsIgnorePattern: '^_',
-      destructuredArrayIgnorePattern: '^_',
-      caughtErrors: 'none',
-      ignoreRestSiblings: true
-    }],
-    // 'no-restricted-imports': ['error', {
-    //   paths: [
-    //     { name: '', importNames: [''], message: '' }
-    //   ]
-    // }],
-    "spaced-comment": ["error", "always", { "exceptions": ["-", "+"] }],
-    // allow async-await
-    'generator-star-spacing': 'off',
-    'indent': ['error', 2, { // 强制使用一致的缩进
-      'SwitchCase': 1,
-      'VariableDeclarator': 'first'
-    }],
-    // allow debugger during development
+    // 由 ./rules 文件夹获取配置
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    // Vue
-    'vue/max-attributes-per-line': ['error', { // 强制每行的最大属性数
-      'singleline': 8,
-      'multiline': {
-        'max': 1,
-        'allowFirstLine': false
-      }
-    }],
-    'vue/name-property-casing': ['error', 'PascalCase'], // vue/component-definition-name-casing 对组件定义名称强制使用特定的大小
-    'vue/require-default-prop': 'off', // 属性默认值必填
-    'vue/html-self-closing': 'off', // 标签自关闭
-    'vue/singleline-html-element-content-newline': 'off', // 单行元素换行
-    'vue/html-closing-bracket-newline': 'off', // 标签末尾结束符位置
-    'vue/attributes-order': 'off', // 关于标签属性的顺序
-    'vue/component-tags-order': 'off',
-    'vue/attribute-hyphenation': ['error', 'always', {
-      // 对于 Mixin 属性不处理
-      'ignore': ['$_']
-    }]
   }
 }
 ```

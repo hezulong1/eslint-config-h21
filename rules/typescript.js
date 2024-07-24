@@ -26,7 +26,7 @@ module.exports = {
   '@typescript-eslint/no-loss-of-precision': possibleProblems['no-loss-of-precision'],
   '@typescript-eslint/no-misused-new': 2,
   '@typescript-eslint/no-namespace': 0,
-  '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
+  '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
   '@typescript-eslint/no-require-imports': 2,
   'no-shadow': 0,
   '@typescript-eslint/no-shadow': suggestions['no-shadow'],

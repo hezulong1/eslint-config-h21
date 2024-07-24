@@ -1,5 +1,5 @@
 // AUTO GENERATED, DON'T EDIT!!!
-// 2024-05-10 09:06:41
+// 2024-07-24 12:09:16
 
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -104,10 +104,9 @@ module.exports = {
     'no-extra-boolean-cast': 2,
     'no-extra-label': 1,
     'no-global-assign': 2,
-    'no-implicit-coercion': 1,
+    'no-implicit-coercion': [1, { boolean: false }],
     'no-implicit-globals': 2,
     'no-implied-eval': 2,
-    'no-invalid-this': 2,
     'no-iterator': 2,
     'no-label-var': 2,
     'no-labels': 2,
@@ -141,7 +140,6 @@ module.exports = {
     'no-var': 2,
     'no-with': 2,
     'object-shorthand': [1, 'properties'],
-    'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'prefer-regex-literals': [2, { disallowRedundantWrapping: true }],
     'prefer-rest-params': 2,
     strict: [2, 'global'],
@@ -551,7 +549,6 @@ module.exports = {
     'vue/component-name-in-template-casing': [2, 'PascalCase'],
     'vue/component-options-name-casing': [2, 'PascalCase'],
     'vue/custom-event-name-casing': [2, 'kebab-case'],
-    'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
     'vue/html-comment-content-spacing': [2, 'always'],
     'vue/no-this-in-before-route-enter': 1,
     'vue/no-use-v-else-with-v-for': 2,

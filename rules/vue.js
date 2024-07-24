@@ -24,7 +24,7 @@ const uncategorized = (version, useTs) => {
     'vue/define-macros-order': 0, // [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
     'vue/define-props-declaration': 0, // TS
     'vue/enforce-style-attribute': 0,
-    'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
+    'vue/html-button-has-type': 0, // [2, { button: true, submit: true, reset: true }],
     'vue/html-comment-content-newline': 0,
     'vue/html-comment-content-spacing': [2, 'always'],
     'vue/html-comment-indent': 0, // [2, config.indent],
