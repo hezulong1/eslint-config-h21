@@ -1,0 +1,166 @@
+import type { Config } from '../types';
+import type { OptionsOverrides } from '../options';
+import pluginUnicorn from 'eslint-plugin-unicorn';
+
+export async function unicorn(opts: OptionsOverrides = {}): Promise<Config[]> {
+  const {
+    overrides,
+  } = opts;
+
+  return [
+    {
+      name: 'h21/unicorn/rules',
+      plugins: {
+        unicorn: pluginUnicorn,
+      },
+      // https://github.com/sindresorhus/eslint-plugin-unicorn#rules
+      rules: {
+        'unicorn/better-regex': 2,
+        // 'unicorn/catch-error-name': 0,
+        // 'unicorn/consistent-assert': 0,
+        // 'unicorn/consistent-date-clone': 0,
+        'unicorn/consistent-destructuring': 2,
+        'unicorn/consistent-empty-array-spread': 2,
+        // 'unicorn/consistent-existence-index-check': 0,
+        // 'unicorn/consistent-function-scoping': 0,
+        // 'unicorn/consistent-template-literal-escape': 2, // Don't have this rule.
+        // 'unicorn/custom-error-definition': 0,
+        // 'unicorn/empty-brace-spaces': 0,
+        'unicorn/error-message': 2,
+        'unicorn/escape-case': 2,
+        // 'unicorn/expiring-todo-comments': 0,
+        // 'unicorn/explicit-length-check': 0,
+        // 'unicorn/filename-case': 0,
+        // 'unicorn/import-style': 0,
+        // 'unicorn/isolated-functions': 0,
+        // 'unicorn/new-for-builtins': 2, // `no-new-native-nonconstructor` + `no-new-wrappers` + `no-new-symbol`
+        // 'unicorn/no-abusive-eslint-disable': 0,
+        'unicorn/no-accessor-recursion': 2,
+        // 'unicorn/no-anonymous-default-export': 0,
+        // 'unicorn/no-array-callback-reference': 0,
+        // 'unicorn/no-array-for-each': 0,
+        'unicorn/no-array-method-this-argument': 2,
+        // 'unicorn/no-array-reduce': 0,
+        // 'unicorn/no-array-reverse': 0,
+        // 'unicorn/no-array-sort': 0,
+        'unicorn/no-await-expression-member': 2,
+        'unicorn/no-await-in-promise-methods': 2,
+        'unicorn/no-console-spaces': 2,
+        // 'unicorn/no-document-cookie': 0,
+        // 'unicorn/no-empty-file': 0,
+        // 'unicorn/no-for-loop': 0, // 2
+        // 'unicorn/no-hex-escape': 0, // 2
+        // 'unicorn/no-immediate-mutation': 0,
+        'unicorn/no-instanceof-builtins': 2,
+        'unicorn/no-invalid-fetch-options': 2,
+        'unicorn/no-invalid-remove-event-listener': 2,
+        // 'unicorn/no-keyword-prefix': 0,
+        // 'unicorn/no-lonely-if': 0, // 2
+        // 'unicorn/no-magic-array-flat-depth': 0,
+        // 'unicorn/no-named-default': 0,
+        // 'unicorn/no-negated-condition': 0,
+        'unicorn/no-negation-in-equality-check': 2,
+        // 'unicorn/no-nested-ternary': 0,
+        // 'unicorn/no-new-array': 0,
+        // 'unicorn/no-new-buffer': 0,
+        // 'unicorn/no-null': 0,
+        'unicorn/no-object-as-default-parameter': 2,
+        // 'unicorn/no-process-exit': 0,
+        // 'unicorn/no-single-promise-in-promise-methods': 0,
+        // 'unicorn/no-static-only-class': 0, // 2
+        // 'unicorn/no-thenable': 0, // 2
+        // 'unicorn/no-this-assignment': 0,
+        // 'unicorn/no-typeof-undefined': 0,
+        // 'unicorn/no-unnecessary-array-flat-depth': 0,
+        // 'unicorn/no-unnecessary-array-splice-count': 0,
+        'unicorn/no-unnecessary-await': 2,
+        // 'unicorn/no-unnecessary-polyfills': [2, { targets: [] / { node: 'current' } }],
+        // 'unicorn/no-unnecessary-slice-end': 0,
+        // 'unicorn/no-unreadable-array-destructuring': 0,
+        'unicorn/no-unreadable-iife': 2,
+        // 'unicorn/no-unused-properties': 0,
+        'unicorn/no-useless-collection-argument': 2,
+        'unicorn/no-useless-error-capture-stack-trace': 2,
+        'unicorn/no-useless-fallback-in-spread': 2,
+        // 'unicorn/no-useless-length-check': 0,
+        'unicorn/no-useless-promise-resolve-reject': 2,
+        'unicorn/no-useless-spread': 2,
+        // 'unicorn/no-useless-switch-case': 0,
+        // 'unicorn/no-useless-undefined': 0,
+        // 'unicorn/no-zero-fractions': 0,
+        'unicorn/number-literal-case': 2,
+        'unicorn/numeric-separators-style': 2,
+        // 'unicorn/prefer-add-event-listener': 0,
+        // 'unicorn/prefer-array-find': 0, // 2
+        // 'unicorn/prefer-array-flat-map': 0, // 2
+        // 'unicorn/prefer-array-flat': 0,
+        // 'unicorn/prefer-array-index-of': 0, // 2
+        // 'unicorn/prefer-array-some': 0, // 2
+        // 'unicorn/prefer-at': 0,
+        // 'unicorn/prefer-bigint-literals': 0,
+        'unicorn/prefer-blob-reading-methods': 2,
+        // 'unicorn/prefer-class-fields': 0,
+        // 'unicorn/prefer-classlist-toggle': 0,
+        // 'unicorn/prefer-code-point': 0,
+        'unicorn/prefer-date-now': 2,
+        'unicorn/prefer-default-parameters': 2,
+        // 'unicorn/prefer-dom-node-append': 0,
+        // 'unicorn/prefer-dom-node-dataset': 0, // 2
+        // 'unicorn/prefer-dom-node-remove': 0,
+        'unicorn/prefer-dom-node-text-content': 2,
+        // 'unicorn/prefer-event-target': 0,
+        // 'unicorn/prefer-export-from': 0,
+        // 'unicorn/prefer-global-this': 0,
+        // 'unicorn/prefer-import-meta-properties': 0,
+        // 'unicorn/prefer-includes': 0,
+        'unicorn/prefer-json-parse-buffer': 2,
+        // 'unicorn/prefer-keyboard-event-key': 0,
+        // 'unicorn/prefer-logical-operator-over-ternary': 0,
+        // 'unicorn/prefer-math-min-max': 0,
+        // 'unicorn/prefer-math-trunc': 2,
+        // 'unicorn/prefer-modern-dom-apis': 0,
+        // 'unicorn/prefer-modern-math-apis': 0,
+        // 'unicorn/prefer-module': 0,
+        // 'unicorn/prefer-native-coercion-functions': 0,
+        'unicorn/prefer-negative-index': 2,
+        // 'unicorn/prefer-node-protocol': 0,
+        // 'unicorn/prefer-number-properties': 0, // 2
+        // 'unicorn/prefer-object-from-entries': 0,
+        // 'unicorn/prefer-optional-catch-binding': 2,
+        'unicorn/prefer-prototype-methods': 2,
+        'unicorn/prefer-query-selector': 2,
+        // 'unicorn/prefer-reflect-apply': 0,
+        // 'unicorn/prefer-regexp-test': 0,
+        'unicorn/prefer-response-static-json': 2,
+        'unicorn/prefer-set-has': 2,
+        'unicorn/prefer-set-size': 2,
+        // 'unicorn/prefer-single-call': 0,
+        // 'unicorn/prefer-spread': 0,
+        // 'unicorn/prefer-string-raw': 0,
+        // 'unicorn/prefer-string-replace-all': 0,
+        // 'unicorn/prefer-string-slice': 0, // 2
+        'unicorn/prefer-string-starts-ends-with': 2,
+        'unicorn/prefer-string-trim-start-end': 2,
+        // 'unicorn/prefer-structured-clone': 0, // deep-clone with `structuredClone` is not widely supported yet
+        // 'unicorn/prefer-switch': 0,
+        // 'unicorn/prefer-ternary': 0,
+        // 'unicorn/prefer-top-level-await': 0,
+        // 'unicorn/prefer-type-error': 0,
+        // 'unicorn/prevent-abbreviations': 0,
+        // 'unicorn/relative-url-style': 0,
+        'unicorn/require-array-join-separator': 2,
+        'unicorn/require-module-attributes': 2,
+        // 'unicorn/require-module-specifiers': 0,
+        'unicorn/require-number-to-fixed-digits-argument': 2,
+        // 'unicorn/require-post-message-target-origin': 0,
+        // 'unicorn/string-content': 0,
+        // 'unicorn/switch-case-braces': 0,
+        // 'unicorn/template-indent': 0,
+        // 'unicorn/text-encoding-identifier-case': 0, // 2
+        'unicorn/throw-new-error': 2,
+
+        ...overrides,
+      },
+    },
+  ];
+}

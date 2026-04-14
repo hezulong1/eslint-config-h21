@@ -1,0 +1,20 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "fixtures"
+  ]
+}
