@@ -14,17 +14,17 @@
 * 默认缩进 2 空格
 
 * 支持 JS、TS、Vue2、Vue3
-* 使用插件 [Import](https://github.com/import-js/eslint-plugin-import) 检测 import/export 语法
+* 使用插件 [Import Lite](https://github.com/9romise/eslint-plugin-import-lite) 检测 `import/export` 语法
 * 使用插件 [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) 美化代码
 * 使用插件 [Eslint Stylistic](https://eslint.style/) 格式化代码
 
 ## 快速开始
 
 ```sh
-npm i eslint eslint-config-h21@next globals -D
+npm i eslint eslint-config-h21 globals -D
 ```
 
-创建一个配置文件，如 `eslint.config.js`，键入：
+创建一个[配置文件](https://eslint.org/docs/latest/use/configure/configuration-files)，如 `eslint.config.js`，键入：
 
 ```js [eslint.config.js]
 import h21 from 'eslint-config-h21';
@@ -41,4 +41,4 @@ export default h21({
   ts: true,
   vue: 3,
 });
-``
+```
