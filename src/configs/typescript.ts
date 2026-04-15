@@ -45,7 +45,7 @@ export async function typescript(opts: OptionsTs = {}): Promise<Config[]> {
         'prefer-spread': jsRules['prefer-spread'], // ts transpiles spread to apply, so no need for manual apply
         //#endregion
 
-        //#endregion recommended https://typescript-eslint.io/rules/?=recommended
+        //#region recommended https://typescript-eslint.io/rules/?=recommended
         '@typescript-eslint/adjacent-overload-signatures': 2,
         '@typescript-eslint/array-type': 0,
         '@typescript-eslint/ban-ts-comment': 0,
