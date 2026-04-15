@@ -1,7 +1,8 @@
 <h1 align="center">eslint-config-h21</h1>
 <p align="center"><a href="README.md">English</a> | 中文</p>
 
-![npm](https://img.shields.io/npm/v/eslint-config-h21?color=%23257855)
+![npm](https://img.shields.io/npm/v/eslint-config-h21/legacy?color=%23257855
+)
 
 <br>
 
@@ -14,7 +15,7 @@
 * 缩进 2 空格
 
 * 支持 JS、TS、Vue2、Vue3
-* 使用插件 [Import](https://github.com/import-js/eslint-plugin-import) 检测 import/export 语法
+* 使用插件 [Import](https://github.com/import-js/eslint-plugin-import) 检测 `import/export` 语法
 * 使用插件 [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) 美化代码
 * 使用插件 [Eslint Stylistic](https://eslint.style/) 格式化代码
 
