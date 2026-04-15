@@ -49,7 +49,7 @@ function build(targetType, vueVersion) {
   const result = {
     env: {
       browser: true,
-      es2021: true,
+      es2022: true,
       node: true,
     },
 
@@ -114,9 +114,7 @@ function build(targetType, vueVersion) {
   }
 
   result.rules = {
-    ...pure(require('../rules/_possibleProblems')),
-    ...pure(require('../rules/_suggestions')),
-    ...pure(require('../rules/_layoutFormatting')),
+    ...pure(require('../rules/_base')),
     // 禁止项不做移除
     ...require('../rules/_disableLegacy'),
     ...pure(require('../rules/stylistic')),
@@ -170,13 +168,6 @@ function build(targetType, vueVersion) {
       },
     );
   }
-
-  result.overrides.push({
-    files: ['scripts/**/*'],
-    rules: {
-      'no-console': 0,
-    },
-  });
 
   return result;
 }

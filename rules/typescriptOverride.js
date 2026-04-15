@@ -1,4 +1,4 @@
-const suggestions = require('./_suggestions');
+const jsRules = require('./_base');
 
 module.exports = {
   'constructor-super': 0, // ts(2335) & ts(2377)
@@ -17,8 +17,8 @@ module.exports = {
   'no-undef': 0, // ts(2304) & ts(2552)
   'no-unreachable': 0, // ts(7027)
   'no-unsafe-negation': 0, // ts(2365) & ts(2322) & ts(2358)
-  'no-var': suggestions['no-var'], // ts transpiles let/const to var, so no need for vars any more
-  'prefer-const': suggestions['prefer-const'], // ts provides better types with const
-  'prefer-rest-params': suggestions['prefer-rest-params'], // ts provides better types with rest args over arguments
-  'prefer-spread': suggestions['prefer-spread'], // ts transpiles spread to apply, so no need for manual apply
+  'no-var': jsRules['no-var'], // ts transpiles let/const to var, so no need for vars any more
+  'prefer-const': jsRules['prefer-const'], // ts provides better types with const
+  'prefer-rest-params': jsRules['prefer-rest-params'], // ts provides better types with rest args over arguments
+  'prefer-spread': jsRules['prefer-spread'], // ts transpiles spread to apply, so no need for manual apply
 };

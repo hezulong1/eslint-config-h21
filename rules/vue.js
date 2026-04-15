@@ -18,7 +18,7 @@ const uncategorized = (version, useTs) => {
     'vue/block-order': [2, { order: isVue3 ? ['script:not([setup])', 'script[setup]', 'template', 'style:not([scoped])', 'style[scoped]'] : [['script', 'template'], 'style'] }], // diff-with-2
     'vue/block-tag-newline': 0,
     'vue/component-api-style': 0,
-    'vue/component-name-in-template-casing': [2, 'PascalCase'], // REDEFINE
+    'vue/component-name-in-template-casing': [2, 'PascalCase'], // Override
     'vue/component-options-name-casing': [2, 'PascalCase'],
     'vue/custom-event-name-casing': [2, isVue3 ? 'camelCase' : 'kebab-case'], // diff-with-2
     'vue/define-macros-order': 0, // [2, { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
@@ -42,24 +42,24 @@ const uncategorized = (version, useTs) => {
     'vue/no-potential-component-option-typo': 0,
     'vue/no-ref-object-reactivity-loss': 0,
     'vue/no-required-prop-with-default': useTs ? 1 : 0, // TS
-    'vue/no-restricted-block': 0, // REDEFINE
-    'vue/no-restricted-call-after-await': 0, // REDEFINE
-    'vue/no-restricted-class': 0, // REDEFINE
-    'vue/no-restricted-component-names': 0, // REDEFINE
-    'vue/no-restricted-component-options': 0, // REDEFINE
-    'vue/no-restricted-custom-event': 0, // REDEFINE
-    'vue/no-restricted-html-elements': 0, // REDEFINE
-    'vue/no-restricted-props': 0, // REDEFINE
-    'vue/no-restricted-static-attribute': 0, // REDEFINE
-    'vue/no-restricted-v-bind': 0, // REDEFINE
-    'vue/no-restricted-v-on': 0, // REDEFINE
+    'vue/no-restricted-block': 0, // Override
+    'vue/no-restricted-call-after-await': 0, // Override
+    'vue/no-restricted-class': 0, // Override
+    'vue/no-restricted-component-names': 0, // Override
+    'vue/no-restricted-component-options': 0, // Override
+    'vue/no-restricted-custom-event': 0, // Override
+    'vue/no-restricted-html-elements': 0, // Override
+    'vue/no-restricted-props': 0, // Override
+    'vue/no-restricted-static-attribute': 0, // Override
+    'vue/no-restricted-v-bind': 0, // Override
+    'vue/no-restricted-v-on': 0, // Override
     'vue/no-root-v-if': 0,
     'vue/no-setup-props-reactivity-loss': 0, // jsx
     'vue/no-static-inline-styles': 0,
     'vue/no-template-target-blank': 0,
     'vue/no-this-in-before-route-enter': 1, // jsx
-    'vue/no-undef-components': 0, // REDEFINE
-    'vue/no-undef-properties': 0, // REDEFINE
+    'vue/no-undef-components': 0, // Override
+    'vue/no-undef-properties': 0, // Override
     'vue/no-unsupported-features': 0,
     'vue/no-unused-emit-declarations': 0,
     'vue/no-unused-properties': 0,
@@ -90,7 +90,7 @@ const uncategorized = (version, useTs) => {
     'vue/v-for-delimiter-style': 0,
     'vue/v-if-else-key': 0,
     'vue/v-on-handler-style': 0,
-    'vue/valid-define-options': 0, // REDEFINE
+    'vue/valid-define-options': 0, // Override
   };
 };
 
@@ -113,7 +113,7 @@ const global_essential = {
   'vue/multi-word-component-names': 0,
   'vue/no-arrow-functions-in-watch': 2, // jsx
   'vue/no-async-in-computed-properties': 2, // jsx
-  'vue/no-child-content': 2, // REDEFINE
+  'vue/no-child-content': 2, // Override
   'vue/no-computed-properties-in-data': 2, // jsx
   // 'vue/no-custom-modifiers-on-v-model': 2, // 2
   // 'vue/no-deprecated-data-object-declaration': 2, // 3 jsx
@@ -126,7 +126,7 @@ const global_essential = {
   // 'vue/no-deprecated-html-element-is': 2, // 3
   // 'vue/no-deprecated-inline-template': 2, // 3
   // 'vue/no-deprecated-props-default-this': 2, // 3 jsx
-  // 'vue/no-deprecated-router-link-tag-prop': 2, // 3 REDEFINE
+  // 'vue/no-deprecated-router-link-tag-prop': 2, // 3 Override
   // 'vue/no-deprecated-scope-attribute': 2, // 3
   // 'vue/no-deprecated-slot-attribute': 2, // 3
   // 'vue/no-deprecated-slot-scope-attribute': 2, // 3
@@ -145,8 +145,8 @@ const global_essential = {
   'vue/no-mutating-props': [2, { shallowOnly: true }], // jsx
   'vue/no-parsing-error': 2,
   'vue/no-ref-as-operand': 2, // jsx
-  'vue/no-reserved-component-names': [2, { disallowVueBuiltInComponents: true, disallowVue3BuiltInComponents: true }], // REDEFINE jsx
-  'vue/no-reserved-keys': 2, // jsx REDEFINE
+  'vue/no-reserved-component-names': [2, { disallowVueBuiltInComponents: true, disallowVue3BuiltInComponents: true }], // Override jsx
+  'vue/no-reserved-keys': 2, // jsx Override
   'vue/no-reserved-props': [2, { vueVersion: 3 }], // jsx diff-with-2
   'vue/no-shared-component-data': 2, // jsx
   'vue/no-side-effects-in-computed-properties': 2, // jsx
@@ -198,46 +198,6 @@ const global_essential = {
   'vue/valid-v-text': 2,
 };
 
-exports.vue3_jsx = `
-// base
-vue/comment-directive
-vue/jsx-uses-vars
-// uncategorized
-vue/new-line-between-multi-line-property
-vue/no-deprecated-model-definition
-vue/no-setup-props-reactivity-loss
-vue/no-this-in-before-route-enter
-// essential
-vue/multi-word-component-names
-vue/no-arrow-functions-in-watch
-vue/no-async-in-computed-properties
-vue/no-computed-properties-in-data
-vue/no-deprecated-data-object-declaration
-vue/no-deprecated-destroyed-lifecycle
-vue/no-deprecated-events-api
-vue/no-deprecated-props-default-this
-vue/no-dupe-keys
-vue/no-expose-after-await
-vue/no-lifecycle-after-await
-vue/no-mutating-props
-vue/no-ref-as-operand
-vue/no-reserved-component-names
-vue/no-reserved-keys
-vue/no-reserved-props
-vue/no-shared-component-data
-vue/no-side-effects-in-computed-properties
-vue/no-use-computed-property-like-method
-vue/no-watch-after-await
-vue/prefer-import-from-vue
-vue/require-prop-type-constructor
-vue/require-render-return
-vue/require-slots-as-functions
-vue/require-valid-default-prop
-vue/return-in-computed-property
-vue/return-in-emits-validator
-vue/valid-next-tick
-`;
-
 const vue3_essential = {
   ...global_essential,
   'vue/no-deprecated-data-object-declaration': 2, // 3
@@ -250,7 +210,7 @@ const vue3_essential = {
   'vue/no-deprecated-html-element-is': 2, // 3
   'vue/no-deprecated-inline-template': 2, // 3
   'vue/no-deprecated-props-default-this': 2, // 3
-  'vue/no-deprecated-router-link-tag-prop': 2, // 3 REDEFINE
+  'vue/no-deprecated-router-link-tag-prop': 2, // 3 Override
   'vue/no-deprecated-scope-attribute': 2, // 3
   'vue/no-deprecated-slot-attribute': 2, // 3
   'vue/no-deprecated-slot-scope-attribute': 2, // 3
@@ -324,7 +284,7 @@ const vue3_strongly_recommended = {
 const recommended = {
   'vue/attributes-order': 1,
   'vue/component-tags-order': 0, // replaced by vue/block-order
-  'vue/no-lone-template': 2, // REDEFINE
+  'vue/no-lone-template': 2, // Override
   'vue/no-multiple-slot-args': 1, // jsx
   'vue/no-v-html': 0,
   'vue/order-in-components': 1, // jsx
