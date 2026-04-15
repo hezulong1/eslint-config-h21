@@ -1,7 +1,7 @@
 <h1 align="center">eslint-config-h21</h1>
 <p align="center">English | <a href="README.zh-CN.md">中文</a></p>
 
-![npm](https://img.shields.io/npm/v/eslint-config-h21?color=%23257855)
+![npm](https://img.shields.io/npm/v/eslint-config-h21/legacy?color=%23257855)
 
 <br>
 
