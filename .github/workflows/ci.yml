@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.19.0'
+          node-version: '22.18.0'
 
       - name: Install dependencies
         run: npm install
@@ -30,50 +30,11 @@ jobs:
         id: publish
         run: |
           echo "🚀 开始发布新版本到 NPM..."
-          if npm publish --dry-run; then
+          if npm publish; then
             echo "✅ 发布成功！"
           else
-            echo "❌ ::error::NPM 发布失败！请检查版本号是否冲突、package.json 是否配置正确或 Token 是否有效。"
+            echo "❌ ::error::NPM 发布失败！"
             exit 1
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Check and Unpublish Old Version
-        if: success()
-        run: |
-          # 1. 获取基础信息
-          PKG_NAME=$(jq -r .name package.json)
-          CUR_VERSION=$(jq -r .version package.json)
-          
-          # 2. 计算旧版本号 (Minor - 1)
-          IFS='.' read -r MAJOR MINOR PATCH <<< "$CUR_VERSION"
-          if [ "$MINOR" -le 0 ]; then
-            echo "⚠️ 当前 Minor 版本为 0，没有更低的 Minor 版本可以删除，跳过此步。"
-            exit 0
-          fi
-          
-          PREV_MINOR=$((MINOR - 1))
-          PREV_VERSION="$MAJOR.$PREV_MINOR.$PATCH"
-          TARGET="$PKG_NAME@$PREV_VERSION"
-          
-          echo "🔍 检查远程仓库是否存在旧版本: $TARGET ..."
-          
-          # 3. 检查版本是否存在
-          # npm view 返回 0 表示存在，返回非 0 表示不存在
-          if npm view "$TARGET" version >/dev/null 2>&1; then
-            echo "📦 发现旧版本，准备执行强制删除..."
-            # if npm unpublish "$TARGET" --force; then
-            #   echo "🗑️ 成功删除旧版本: $TARGET"
-            # else
-            #   echo "⚠️ 删除失败。请注意：npm 仅允许删除发布 72 小时内的版本。"
-            # fi
-            echo "模拟执行: npm unpublish $TARGET --force"
-            echo "🗑️ 模拟删除完成（实际未操作）"
-          else
-            echo "ℹ️ 远程仓库未找到版本 $TARGET，无需删除。"
-          fi
-          
-          echo "🎉 所有任务执行完毕！"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
