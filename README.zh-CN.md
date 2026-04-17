@@ -24,6 +24,12 @@
 npm i eslint eslint-config-h21 globals -D
 ```
 
+如果需要支持 Vue，还需要额外执行命令。
+
+```sh
+npm i eslint-plugin-vue vue-eslint-parser -D
+```
+
 创建一个[配置文件](https://eslint.org/docs/latest/use/configure/configuration-files)，如 `eslint.config.js`，键入：
 
 ```js [eslint.config.js]

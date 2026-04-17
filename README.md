@@ -24,6 +24,12 @@ An ESLint rule configuration with relatively good support.
 npm i eslint eslint-config-h21 globals -D
 ```
 
+If you want Vue support, install the additional packages:
+
+```sh
+npm i eslint-plugin-vue vue-eslint-parser -D
+```
+
 Create a [configuration file](https://eslint.org/docs/latest/use/configure/configuration-files), such as `eslint.config.js`, and enter:
 
 ```js

@@ -241,7 +241,7 @@ const uncategorized: GenFn = (version, style, ts) => {
     // 'vue/define-emits-declaration': 0,
     // 'vue/define-macros-order': 0, // [style]
     // 'vue/define-props-declaration': 0, // [TS]
-    'vue/define-props-destructuring': 2,
+    // 'vue/define-props-destructuring': 0,
     // 'vue/enforce-style-attribute': 0,
     'vue/html-button-has-type': [2, { button: true, submit: true, reset: true }],
     // 'vue/html-comment-content-newline': 0, // [style]
@@ -342,7 +342,7 @@ const uncategorized: GenFn = (version, style, ts) => {
   return rules;
 };
 
-const extension: GenFn = (vueVersion, style) => {
+const extension: GenFn = (version, style) => {
   let rules: Rules = {
     'vue/camelcase': jsRules['camelcase'],
     'vue/dot-notation': jsRules['dot-notation'],
