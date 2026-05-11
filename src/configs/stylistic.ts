@@ -179,7 +179,7 @@ export async function stylistic(options: OptionsStyle = {}): Promise<Config[]> {
               '@stylistic/jsx-indent-props': [2, indent],
               '@stylistic/jsx-max-props-per-line': [2, { maximum: 1, when: 'multiline' }],
               '@stylistic/jsx-newline': 0,
-              '@stylistic/jsx-one-expression-per-line': [2, { allow: 'single-child' }],
+              '@stylistic/jsx-one-expression-per-line': [2, { allow: 'non-jsx' }], // [2, { allow: 'single-child' }],
               '@stylistic/jsx-pascal-case': 2, // [2, { allowNamespace: true }],
               '@stylistic/exp-jsx-props-style': 0, // Added experimental-rule
               // '@stylistic/jsx-props-no-multi-spaces': 2,

@@ -132,7 +132,7 @@ export async function unicorn(opts: OptionsOverrides = {}): Promise<Config[]> {
         // 'unicorn/prefer-reflect-apply': 0,
         // 'unicorn/prefer-regexp-test': 0,
         'unicorn/prefer-response-static-json': 2,
-        'unicorn/prefer-set-has': 2,
+        'unicorn/prefer-set-has': 0,
         'unicorn/prefer-set-size': 2,
         // 'unicorn/prefer-single-call': 0,
         // 'unicorn/prefer-spread': 0,
